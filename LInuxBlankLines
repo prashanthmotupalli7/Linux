@@ -1,0 +1,18 @@
+Linux command to remove the blank lines in a text 
+
+
+3 ways 
+======
+
+grep -v '^$' file1.txt   ( It will print the results without blank lines)
+grep -v '^$' file1.txt > file2.txt ( it will create a new file without blank lines)
+
+
+sed '/^$/d' file1.txt  ( It will print the results without blank lines)
+sed '/^$/d' file1.txt    ( it will create a new file without blank lines)
+
+In text using VM editor
+vi file1.txt
+: g/^$/d  ( removes the blank lines )
+:wq   
+
